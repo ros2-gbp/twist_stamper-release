@@ -1,0 +1,22 @@
+ros-rolling-twist-stamper (0.0.3-3noble) noble; urgency=high
+
+  * fix python setuptools install error (#1 <https://github.com/joshnewans/twist_stamper/issues/1>)
+    Co-authored-by: Sönke Niemann <mailto:soenke.niemann@ipk.fraunhofer.de>
+  * Contributors: niemsoen
+
+ -- Josh Newans <josh.newans@gmail.com>  Fri, 16 Sep 2022 00:00:00 -0000
+
+ros-rolling-twist-stamper (0.0.2-3noble) noble; urgency=high
+
+  * Add unstamper
+  * Removed cache files from git
+  * Switched license to Apache 2.0 to match ROS2 standard
+  * Fixed unit test issues.
+  * Fixed license
+  * Added content
+  * Initial commit
+  * Contributors: Josh Newans
+
+ -- Josh Newans <josh.newans@gmail.com>  Wed, 27 Jan 2021 00:00:00 -0000
+
+
