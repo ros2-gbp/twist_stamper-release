@@ -1,0 +1,12 @@
+Source: ros-rolling-twist-stamper
+Section: misc
+Priority: optional
+Maintainer: Josh Newans <josh.newans@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-ament-copyright <!nocheck>, python3-ament-flake8 <!nocheck>, python3-ament-pep257 <!nocheck>, python3-pytest <!nocheck>, ros-rolling-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-twist-stamper
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, libgeometry-msgs-dev, libstd-msgs-dev, python3-geometry-msgs, python3-std-msgs, ros-geometry-msgs, ros-rolling-rclpy, ros-std-msgs, ros-rolling-ros-workspace
+Description: ROS2 package for converting between Twist and TwistStamped messages
