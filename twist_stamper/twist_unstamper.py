@@ -12,11 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import rclpy
-from rclpy.node import Node
 
 from geometry_msgs.msg import Twist
 from geometry_msgs.msg import TwistStamped
+
+import rclpy
+from rclpy.executors import ExternalShutdownException
+from rclpy.node import Node
 
 
 class TwistUnstamper(Node):
@@ -33,6 +35,8 @@ class TwistUnstamper(Node):
             10)
         self.subscription  # prevent unused variable warning
 
+        print('Started twist_unstamper!')
+
     def listener_callback(self, inMsg):
 
         self.publisher_.publish(inMsg.twist)
@@ -43,10 +47,17 @@ def main(args=None):
     rclpy.init(args=args)
 
     twist_unstamper = TwistUnstamper()
-    rclpy.spin(twist_unstamper)
+    try:
+        rclpy.spin(twist_unstamper)
+    except KeyboardInterrupt:
+        print('Received keyboard interrupt!')
+    except ExternalShutdownException:
+        print('Received external shutdown request!')
+
+    print('Exiting...')
 
     twist_unstamper.destroy_node()
-    rclpy.shutdown()
+    rclpy.try_shutdown()
 
 
 if __name__ == '__main__':
