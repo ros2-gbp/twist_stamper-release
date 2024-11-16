@@ -1,3 +1,26 @@
+## twist_stamper (jazzy) - 0.0.4-1
+
+The packages in the `twist_stamper` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy twist_stamper` on `Sat, 16 Nov 2024 02:20:15 -0000`
+
+The `twist_stamper` package was released.
+
+Version of package(s) in repository `twist_stamper`:
+
+- upstream repository: https://github.com/joshnewans/twist_stamper.git
+- release repository: https://github.com/ros2-gbp/twist_stamper-release.git
+- rosdistro version: `0.0.3-4`
+- old version: `0.0.3-4`
+- new version: `0.0.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## twist_stamper (rolling) - 0.0.3-1
 
 The packages in the `twist_stamper` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --ros-distro rolling --track rolling twist_stamper --edit --override-release-repository-url https://github.com/ros2-gbp/twist_stamper-release.git` on `Fri, 16 Sep 2022 11:30:26 -0000`
