@@ -2,6 +2,12 @@
 Changelog for package twist_stamper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.5 (2024-11-16)
+------------------
+* Trying to fix flake8 errors
+* Fix typo
+* Contributors: Josh Newans
+
 0.0.4 (2024-11-16)
 ------------------
 * Further improvements to shutdown handling
