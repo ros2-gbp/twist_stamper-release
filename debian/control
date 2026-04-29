@@ -1,0 +1,12 @@
+Source: ros-lyrical-twist-stamper
+Section: misc
+Priority: optional
+Maintainer: Josh Newans <josh.newans@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-lyrical-ament-copyright <!nocheck>, ros-lyrical-ament-flake8 <!nocheck>, ros-lyrical-ament-pep257 <!nocheck>, ros-lyrical-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://index.ros.org/p/twist_stamper/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-twist-stamper
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-lyrical-geometry-msgs, ros-lyrical-rclpy, ros-lyrical-std-msgs, ros-lyrical-ros-workspace
+Description: ROS2 package for converting between Twist and TwistStamped messages
